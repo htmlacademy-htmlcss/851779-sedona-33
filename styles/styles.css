@@ -1,0 +1,188 @@
+
+/* Главная */
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  body {
+    font-family: "PT Sans", sans-serif;
+
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .button {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-color:#756257;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .page-header {
+    color: #000000;
+    background: #ffffff;
+  }
+
+  .navigation-link {
+    font-family: "PT Sans", sans-serif; 
+    font-size: 20px;
+    line-height: 24px;
+
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+  }
+
+  .background-index {
+    color: #000000;
+    background-color: #ffffff;
+    background-image: url("index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  .about-advantages {
+    text-align: center;
+  }
+
+  .advantages-title-about {
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .advantages-description-about {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+
+  .advantages-list {
+    text-align: center;
+    background-color:  #F0F6FA;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #00000f;
+  }
+
+  .advantages-title {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  .advantages-description {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .hotel-search {
+    color: #000000;
+    background-color: #ffffff;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    text-align: center;
+  }
+
+  .hotel-search-title {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .hotel-search-description {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .mailing-list {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    align: center;
+    color:#ffffff;
+  }
+
+  .mailing-list-description {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .phone-number {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    align: center;
+    color:#000000;
+  }
+
+  /* Страница каталога */
+
+  .inner-header-title {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 77px;
+  }
+  
+.catalog-filter-title {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.catalog-filter-list {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.hotel-card-title {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+
+    text-decoration: none;
+}
+
+.product-card-price {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
