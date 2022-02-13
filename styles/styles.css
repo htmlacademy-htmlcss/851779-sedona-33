@@ -8,7 +8,16 @@
     font-display: swap;
   }
 
+  html {
+    height: 100%;
+}
+
+
   body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
 
     font-size: 18px;
@@ -16,6 +25,11 @@
     color: #000000;
     background-color: #ffffff;
   }
+
+  .page-container {
+    width: 1200px; 
+  }
+
 
   .button {
     font-family: inherit;
@@ -34,6 +48,23 @@
     background: #ffffff;
   }
 
+  .navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+  }
+
+  .navigation-list {
+    width: 460px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation-user {
+    max-width: 264px;
+    margin-left: auto;
+  }
+
   .navigation-link {
     font-family: "PT Sans", sans-serif; 
     font-size: 20px;
@@ -46,17 +77,16 @@
     text-decoration: none;
   }
 
-  .background-index {
-    color: #000000;
-    background-color: #ffffff;
-    background-image: url("index-background.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+  .page-container {
+    width: 1060px;
+    margin: 0 auto;
   }
 
-  .about-advantages {
-    text-align: center;
-  }
+  .main-welcome {
+    min-height: 485px;
+    background-image: url(images/index-background.jpg);
+   }
+
 
   .advantages-title-about {
     font-family: "PT Sans", sans-serif;
@@ -75,15 +105,36 @@
 
 
   .advantages-list {
-    text-align: center;
-    background-color:  #F0F6FA;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    color: #00000f;
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+    padding: none;
+    margin: none;
+}
+
+   .advantages-item-wrapper {
+    width: 100%;
+    background-color: cadetblue;
+  }
+
+   .advantages-item-image {
+    display: flex;
+  }
+   
+  .advantages-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 384px; 
+    width: 400px;
+   
+    background-color:#E5E5E5;
   }
 
   .advantages-title {
     font-family: "PT Sans", sans-serif;
+    justify-content: center;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -97,6 +148,7 @@
   }
 
   .hotel-search {
+    justify-content: center;
     color: #000000;
     background-color: #ffffff;
     background-size: 100% auto;
