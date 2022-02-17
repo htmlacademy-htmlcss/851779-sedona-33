@@ -1,0 +1,406 @@
+
+/* Главная */
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  html {
+    height: 100%;
+}
+
+
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: "PT Sans", sans-serif;
+
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #f5f5f5;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .page-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+
+  .button {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-color:#756257;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .page-header {
+    color: #000000;
+    background: #ffffff;
+  }
+
+  .navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+  }
+
+  .navigation-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 460px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+
+  .navigation-user {
+    max-width: 264px;
+    margin-left: auto;
+  }
+
+  .navigation-list .navigation-user{
+    min-width: 42px;
+    min-height: 66px;
+  }
+
+  .navigation-link {
+    display: block;
+    padding: 34px 17px;
+    font-family: "PT Sans", sans-serif; 
+    font-size: 20px;
+    line-height: 24px;
+
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+  }
+
+
+  .page-container {
+    width: 1200px; 
+    background: url("../images/index-background.jpg") no-repeat top;
+  }
+
+  .logo-big {
+    padding-top: 46px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hotel-search-content {
+    padding: 80px;
+    text-align: center;
+ }
+
+
+  .about-advantages {
+    text-align: center; 
+    margin-top: 63px;
+    margin-bottom: 147px;
+  }
+
+  .about-advantages-wrapper {
+    width: 1200px;
+    background-color: white;
+  }
+
+  .about-advantages-content {
+    padding: 80px;
+    text-align: center;
+  }
+
+  
+  .advantages-title-about {
+    padding-top: 63px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .advantages-description-about {
+    padding-bottom: 63px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  .advantages {
+    display: flex;
+  }
+
+
+  .advantages-list {
+    list-style: none;
+    padding: 0;
+    margin: none;
+}
+
+   .advantages-item-wrapper {
+    width: 100%;
+  }
+
+  .advantages-item {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 384px; 
+    width: 400px;
+    
+  }
+
+  .advantages-content {
+   padding: 80px;
+   text-align: center;
+   background-color:#83B3D3;
+   color: white;
+  }
+
+  .advantages-content-icon {
+   padding: 75px;
+   text-align: center;
+   background-color:#F0F6FA;
+   color: #000000;  
+  }
+
+
+  .advantages-title {
+    font-family: "PT Sans", sans-serif;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  .advantages-description {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .advantages-item-image {
+    display: flex;
+  }
+
+
+
+
+ .hotel-search-wrapper {
+    width: 1200px;
+    min-height: 417px;
+}
+
+.hotel-search-content {
+   padding: 80px;
+   text-align: center;
+}
+
+
+  .hotel-search {
+    justify-content: center;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  .hotel-search-title {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .hotel-search-description {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+  }
+
+  .button-search-hotel {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-color:#756257;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+   .mailing-list-wrapper {
+    width: 1200px;
+    min-height: 411px;
+    
+}
+
+.mailing-list-content {
+   padding: 80px;
+   text-align: center;
+}
+ 
+  .mailing-list {
+    font-family: "PT Sans", sans-serif;
+    width: 1200px; 
+    background: url("../images/background.jpg") no-repeat;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    box-align: center;
+    color:#ffffff;
+  }
+
+ 
+  .mailing-list-description {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+ /* Footer */
+
+ .page-footer {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .page-footer-container {
+    display: flex;
+    width: 1200px;
+    min-height: 120px;
+    margin: 0 auto;
+  }
+
+  .footer-social-list {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }  
+
+  .phone-number {
+
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    align: center;
+    color:#000000;
+  }
+
+  .phone-number-wrapper{
+    width: 340px;
+    padding-left: 431px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 431px;
+}
+
+.footer-logo-wrapper {
+    
+    
+
+}
+
+  /* Страница каталога */
+
+
+  .main-inner {
+    width: 1200px;
+    margin: 0 auto; 
+  }
+  
+  .inner-header-title {
+    margin-top: 0;
+    margin-bottom: 16px; 
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 77px;
+  }
+  
+  .breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0; 
+    color: #242424;
+    list-style-type: none;
+  }
+
+  .breadcrumbs-link {
+    color: inherit;
+    margin-right: 32px;
+  }
+
+  
+
+.catalog-filter-title {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.catalog-filter-list {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+
+
+
+.hotel-card-title {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+
+    text-decoration: none;
+}
+
+.product-card-price {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
