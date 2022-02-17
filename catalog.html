@@ -214,21 +214,28 @@
           </select>
 
           <section class="mailing-list">
+            <div class="mailing-list-wrapper">
+              <div class="mailing-list-content"> 
             <h4 class="mailing-list-title">Подпишитесь на рассылку</h4>
             <p class="mailing-list-description">Только полезная информация и никакого спама,
               честное бойскаутское!
-              </p>
-              <form class="mailing-list-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="field"  placeholder="Ваш e-mail" type="email" name="mailing-list-email" id="mailing-list-email" required>
-              <button class="button mailing-list-button" type="submit">
-                <span class="visually-hidden">Подписаться</span>
+            </p>
+            <form class="mailing-list-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="field" placeholder="Ваш e-mail" type="email" name="mailing-list-email" id="mailing-list-email"
+                required>
+              <button class="button mailing-list-button" type="submit">Подписаться
               </button>
             </form>
+              </div>
+          </div>
           </section>
+        </main>
 
-      </main>
+  
       <footer class="page-footer">
+        <div class="page-footer-container">
         <section class="footer-social">
+          <h2 class="visually-hidden">Футер</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="button" href="#">
@@ -247,15 +254,20 @@
             </li>
           </ul>
         </section>
-  
+    
         <section class="phone-number">
-        <h3>+7 (812) 812-12-12</h3>
-      </section>
-  
-      <section class="footer-logo">
-        <h2 class="visually-hidden">Логотип</h2>
-        <img class="footer-contacts-logo" src= "images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип Академии">
+          <div class="phone-number-wrapper">
+          <a class="phone-number-link" href="#">+7 (812) 812-12-12</a>
+        </div>
         </section>
+    
+        <section class="footer-logo">
+          <div class="footer-logo-wrapper">
+          <h2 class="visually-hidden">Логотип</h2>
+          <img class="footer-contacts-logo" src= "images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип Академии">
+          </div>
+        </section>
+      </div>
       </footer>
   </body>
 </html>
