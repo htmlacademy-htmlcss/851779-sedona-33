@@ -8,6 +8,13 @@
     font-display: swap;
   }
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+
   html {
     height: 100%;
 }
@@ -40,6 +47,7 @@
   .page-container {
     width: 1200px;
     margin: 0 auto;
+    background-color: #ffffff;
   }
 
 
@@ -96,18 +104,23 @@
     font-weight: 700;
     text-align: center;
     color: #000000;
-    background-color: #ffffff;
     text-decoration: none;
   }
 
 
   .page-container {
     width: 1200px; 
-    background: url("../images/index-background.jpg") no-repeat top;
   }
+
+  .logo-wrapper {
+    background: url("../images/index-background.jpg") no-repeat top;
+    min-height: 485px;
+  }
+
 
   .logo-big {
     padding-top: 46px;
+    padding-bottom: 83px;
     display: block;
     margin: 0 auto;
   }
@@ -117,24 +130,12 @@
     text-align: center;
  }
 
-
   .about-advantages {
     text-align: center; 
-    margin-top: 63px;
-    margin-bottom: 147px;
-  }
-
-  .about-advantages-wrapper {
-    width: 1200px;
-    background-color: white;
-  }
-
-  .about-advantages-content {
     padding: 80px;
     text-align: center;
   }
 
-  
   .advantages-title-about {
     padding-top: 63px;
     font-family: "PT Sans", sans-serif;
@@ -158,9 +159,11 @@
 
 
   .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    margin: none;
+    margin: 0;
 }
 
    .advantages-item-wrapper {
@@ -168,26 +171,38 @@
   }
 
   .advantages-item {
-    flex-direction: column;
-    justify-content: center;
+    padding: 80px;
     min-height: 384px; 
     width: 400px;
-    
+    text-align: center;
+    background-color:#F0F6FA;
   }
 
-  .advantages-content {
-   padding: 80px;
-   text-align: center;
-   background-color:#83B3D3;
-   color: white;
+  .advantages-item-with-image {
+    background-color:#83B3D3;
+    color: white;
   }
 
-  .advantages-content-icon {
-   padding: 75px;
-   text-align: center;
+  .advantages-item-icon-home {
+   background: url("../images/icon-1.svg") no-repeat top; 
    background-color:#F0F6FA;
-   color: #000000;  
   }
+
+
+  .advantages-item-icon-food {
+    background: url("../images/icon-2.svg") no-repeat top; 
+    background-color:#FFFFFF;
+  }
+
+  .advantages-item-icon-souvenirs {
+    background: url("../images/icon-3.svg") no-repeat top; 
+    background-color:#F0F6FA;
+  }
+
+  .advantages-item-darkblue {
+    background-color:#E6F0F6;
+  }
+
 
 
   .advantages-title {
@@ -303,15 +318,28 @@
   }
 
   .footer-social-list {
-    display: flex;
-    flex-wrap: wrap; 
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap; 
+  list-style-type: none;
   }  
 
-  .phone-number {
+.footer-social {
+  margin-right: auto;
+  padding-left: 72px;
+  padding-top: 40px;
+}
 
+
+.footer-social-item {
+  width: 20px;
+  height: 16px;
+  margin-right: 30px;
+}
+
+  .phone-number {
+    margin-right: 240px;
+    padding-top: 40px;
+    max-width: 720px;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 40px;
@@ -321,18 +349,9 @@
     color:#000000;
   }
 
-  .phone-number-wrapper{
-    width: 340px;
-    padding-left: 431px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 431px;
-}
-
 .footer-logo-wrapper {
-    
-    
-
+  margin-right: 72px;
+  padding-top: 40px;
 }
 
   /* Страница каталога */
@@ -341,37 +360,48 @@
   .main-inner {
     width: 1200px;
     margin: 0 auto; 
+    background: url("../images/catalog-background-1.jpg") no-repeat top;
+    min-height: 485px;
   }
   
+
   .inner-header-title {
-    margin-top: 0;
-    margin-bottom: 16px; 
+    list-style-type: none;
+    margin-top: 0px;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 60px;
     line-height: 77px;
+    color: #FFFFFF;
   }
   
+
   .breadcrumbs {
     display: flex;
     margin: 0;
     padding: 0; 
-    color: #242424;
+    color: #FFFFFF;
     list-style-type: none;
   }
 
-  .breadcrumbs-link {
-    color: inherit;
-    margin-right: 32px;
-  }
+.breadcrumbs-item {
+ margin-top: 0px;
 
-  
+}
+
+.catalog-filter-group {
+  display: flex;
+  margin: 0;
+  width: 220px;
+  margin-right: 20px;
+}
 
 .catalog-filter-title {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
+    color: #FFFFFF;
 }
 
 .catalog-filter-list {
@@ -379,6 +409,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
+    color: #FFFFFF;
 }
 
 

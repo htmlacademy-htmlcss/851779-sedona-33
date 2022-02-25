@@ -6,46 +6,47 @@
     <link rel="stylesheet" href="styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/851779-sedona-33/5/">
 </head>
+  
   <body>
-    <header class="page-header">
+    <div class="page-container">
+      <header class="page-header">
         <nav class="navigation">
-          <a class="navigation-logo" href="index.html">
-            <img class="page-header-logo" src="images/logo.svg" width="139" height="70" alt="Логотип сайта «Город Седона»">
+          <a class="navigation-logo">
+            <img class="page-header-logo" src="images/logo.svg" width="139" height="70"
+              alt="Логотип сайта «Город Седона»">
           </a>
-            <ul class="navigation-list">
-              <li class="navigation-item">
-          <a class="navigation-link" href="main.html">Главная</a>
-              </li>
-              <li class="navigation-item">
-          <a class="navigation-link" href="about.html">О Седоне</a>
-              </li>
-              <li class="navigation-item">
-          <a class="navigation-link" href="hotels.html">Гостиницы</a>
-              </li>
-            </ul>
-            <ul class="navigation-list navigation-user">
-              <li class="navigation-item">
-          <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
-              </li>
-              <li class="navigation-item">
-          <a class="navigation-link" href="#"><span class="visually-hidden">Лайки</span></a>
-              </li>
-              <li class="navigation-item">
-          <a class="navigation-link" href="#"><span class="visually-hidden">Кнопка</span></a>
-              </li>
-            </ul>
-         </nav>
-      </header> 
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="main.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="about.html">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#"><span class="visually-hidden">Лайки</span></a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#"><span>Хочу сюда!</span></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
       <main class="main-inner">
-        <img class="background-index" src="images/catalog-background-1.jpg" width="1200" height="408" alt="Фото города Седона">
         <header class="inner-header">
-            <h2 class="inner-header-title">Главная</h2>
+            <h2 class="visually-hidden">Главная</h2>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
                     <a class="navigation-link" href="">
                       <img class="main-icon" src="images/home1.svg" width="12" height="12" alt="Иконка главной страницы">
-                        <span class="visually-hidden">Главная</span>
                       </a>
                 </li>
                 <li class="breadcrumbs-item">
@@ -57,8 +58,11 @@
           <section class="catalog-products">
             <h1 class="inner-header-title">Гостиницы Седоны</h1> 
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
+            <!-- Сортировка -->
+
+            <div class="catalog-left-column">
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
                     <ul class="catalog-filter-list">
@@ -82,7 +86,9 @@
                      </li>
                     </ul>
                   </fieldset>
-        
+                </div>
+
+
                   <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Тип жилья:</legend>
                   <label class="control">
@@ -233,42 +239,43 @@
         </main>
 
   
-      <footer class="page-footer">
-        <div class="page-footer-container">
-        <section class="footer-social">
-          <h2 class="visually-hidden">Футер</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Твиттер</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Фэйсбук</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Ютуб</span>
-              </a>
-            </li>
-          </ul>
-        </section>
+        <footer class="page-footer">
+          <div class="page-footer-container">
+            <section class="footer-social">
+              <h2 class="visually-hidden">Футер</h2>
+              <ul class="footer-social-list">
+                <li class="footer-social-item">
+                  <a class="button" href="#">
+                    <span class="visually-hidden">Твиттер</span>
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="button" href="#">
+                    <span class="visually-hidden">Фэйсбук</span>
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="button" href="#">
+                    <span class="visually-hidden">Ютуб</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
     
-        <section class="phone-number">
-          <div class="phone-number-wrapper">
-          <a class="phone-number-link" href="#">+7 (812) 812-12-12</a>
-        </div>
-        </section>
+            <section class="phone-number">
+              <div class="phone-number-wrapper">
+                <a class="phone-number-link" href="#">+7 (812) 812-12-12</a>
+              </div>
+            </section>
     
-        <section class="footer-logo">
-          <div class="footer-logo-wrapper">
-          <h2 class="visually-hidden">Логотип</h2>
-          <img class="footer-contacts-logo" src= "images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип Академии">
+            <section class="footer-logo">
+              <div class="footer-logo-wrapper">
+                <h2 class="visually-hidden">Логотип</h2>
+                <img class="footer-contacts-logo" src="images/logo-htmlacademy.svg" width="115" height="34"
+                  alt="Логотип Академии">
+              </div>
+            </section>
           </div>
-        </section>
-      </div>
-      </footer>
+        </footer>
   </body>
 </html>
