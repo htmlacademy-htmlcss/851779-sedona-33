@@ -125,6 +125,7 @@
     margin: 0 auto;
   }
 
+
   .hotel-search-content {
     padding: 80px;
     text-align: center;
@@ -364,29 +365,105 @@
     min-height: 485px;
   }
   
+  .breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 72px; 
+    color: #FFFFFF;
+    list-style-type: none;
+  }
+
+  .breadcrumbs-item {
+    display: flex;
+    padding-top: 10px; 
+  }
 
   .inner-header-title {
+    padding-top: 30px;
+    padding-left: 72px; 
     list-style-type: none;
     margin-top: 0px;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 60px;
-    line-height: 77px;
     color: #FFFFFF;
   }
-  
-
-  .breadcrumbs {
+ 
+  .filter-hotel  {
     display: flex;
-    margin: 0;
-    padding: 0; 
-    color: #FFFFFF;
-    list-style-type: none;
-  }
+    padding-top: 72px;
+    padding-left: 72px;
+}
+ 
+/* Список карточек */
 
-.breadcrumbs-item {
- margin-top: 0px;
+.demo-wrapper {
+  display: flex;
+}
 
+.hotel-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  margin-bottom: 32px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 72px;
+  gap: 18px;
+}
+
+
+.hotel-card {
+  width: 1fr;
+  min-height: 438px;
+  background-color: #ffffff;
+
+}
+
+.hotel-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+
+.hotel-card-wrapper {
+  padding: 20px;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+}
+
+.hotel-card-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+
+  text-decoration: none;
+}
+
+.product-card-price {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.select-item {
+  padding-left: 192px;
+}
+
+.catalog-filter {
+  display: flex;
+  flex-direction: row;
+  padding-left: 72px;
+   
+  align-items: center;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
 }
 
 .catalog-filter-group {
@@ -412,24 +489,77 @@
     color: #FFFFFF;
 }
 
+/* Pagination container */
 
-
-
-.hotel-card-title {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 31px;
-
-    text-decoration: none;
+.pagination-container {
+  display: flex;
+  padding: 30px;
+  background-color: #ffffff;
 }
 
-.product-card-price {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #242424;
+}  
+
+.pagination-prev,
+.pagination-next {
+  position: relative;
+}
+
+
+
+.pagination-link {
+  background-color: #83B3D3;
+  color: #ffffff;
+  width: 55px;
+  height: 55px;
+  display: block;
+  text-decoration: none;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  line-height: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+
+
+}
+
+
+
+
+
+
+.big-button-item {
+  margin: 0;
+  max-width: 620px;
+  min-height: 60px;
+  background-color: #83B3D3;
+  color: #ffffff;
+  text-align: center;
+
+}
+
+.button-big {
+  display: flex;
+  
+}
+
+
+
+
+
 
 a {
     text-decoration: none;
