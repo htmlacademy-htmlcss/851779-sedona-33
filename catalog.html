@@ -42,6 +42,10 @@
       <main class="main-inner">
         <header class="inner-header">
             <h2 class="visually-hidden">Главная</h2>
+             <section class="catalog-products">
+            <h1 class="inner-header-title">Гостиницы Седоны</h1> 
+            <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+          </section> 
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
                     <a class="navigation-link" href="">
@@ -54,13 +58,10 @@
               </ul>
           </header>
 
-          <section class="catalog-products">
-            <h1 class="inner-header-title">Гостиницы Седоны</h1> 
-            <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
 
             <!-- Сортировка -->
 
-            <div class="catalog-left-column">
+            
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -84,10 +85,7 @@
                       </label>
                      </li>
                     </ul>
-                  </fieldset>
-                </div>
-
-
+                  </fieldset>     
                   <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Тип жилья:</legend>
                   <label class="control">
@@ -112,15 +110,25 @@
                           </li>
                           </ul>
                 </fieldset>
+                
+
+                <div class="button-item-form">
                 <button class="button" type="submit">Применить</button>
                 <button class="button-discard" type="reset">Сбросить</button>
+              </div>
               </form>
+
+              <!-- Фильтр гостиниц -->
+              <div class="filter-hotel">
               <h2>Найдено гостиниц: 38</h2>
+              <div class="select-item">
               <select class="select-control" aria-label="Сортировка">
                 <option value="cheap">Сначала дешёвое</option>
                 <option value="popular">Сначала популярное</option>
                 <option value="expensive">Сначала дорогое</option>
               </select>
+            </div>
+            <div class="filter-hotel-icon">
               <a href="#" class="button button-light">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
@@ -130,22 +138,30 @@
               <a class="button" href="#">
                 <span class="visually-hidden">Показать список</span>
               </a>
+            </div>
+            </div>
+
+              <!-- Карточки гостиниц -->
+              <div class="demo-wrapper">
               <ul class="hotel-list">
               <li class="hotel-card">
+                <div class="hotel-card-wrapper">
                 <a class="hotel-card-link" href="hotel.html">
                   <img class="hotel-card-image"  src="images/hotel-1.jpg" width="300" height="206"  alt="Фото отеля">
                   <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                 </a>
                 <p class="product-card-price">Гостиница</p>
                 <p class="product-card-price">От 4000 ₽</p>
-                <a class="product-card-button button" href="#">Подробнее</a>
+                <a class="product-card-button" href="#">Подробнее</a>
                 <button class="button" type="submit">В избранное</button>
                 <section class="hotel-rating">
                     <p class="rating-title">Рейтинг: 8,5</p>
                     <img class="rating-star" src="" alt="Рейтинг звезд отеля">
                     </section>  
+                  </div>
            </li>
            <li class="hotel-card">
+            <div class="hotel-card-wrapper">
             <a class="hotel-card-link" href="hotel.html">
               <img class="hotel-card-image" src="images/hotel-2.jpg" width="300" height="206" alt="Фото отеля">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -158,8 +174,10 @@
               <p class="rating-title">Рейтинг: 8,9</p>
               <img class="rating-star" src="" alt="Рейтинг звезд отеля">
               </section>  
+            </div>
        </li>
        <li class="hotel-card">
+        <div class="hotel-card-wrapper">
         <a class="hotel-card-link" href="hotel.html">
           <img class="hotel-card-image" src="images/hotel-3.jpg" width="300" height="206" alt="Фото отеля">
           <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -172,8 +190,10 @@
           <p class="rating-title">Рейтинг: 9,2</p>
           <img class="rating-star" src="" alt="Рейтинг звезд отеля">
           </section>  
+        </div>
    </li>
    <li class="hotel-card">
+    <div class="hotel-card-wrapper">
     <a class="hotel-card-link" href="hotel.html">
       <img class="hotel-card-image" src="images/hotel-4.jpg" width="300" height="206" alt="Фото отеля">
       <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -186,14 +206,22 @@
       <p class="rating-title">Рейтинг: 9,2</p>
       <img class="rating-star"  alt="Рейтинг звезд отеля">
       </section>  
+    </div>
 </li>
 </ul>
+</div>
 
-    <button class="button" type="submit">Загрузить ещё</button>
-          
+
+<div class="big-button-item">
+<button class="button-big" type="submit">Загрузить ещё</button>
+</div>
+
+
+<div class="pagination-container">
+<section class="pagination-list">
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+              <a class="pagination-link pagination-prev pagination-disabled">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -218,6 +246,9 @@
             <option value="cheap">6</option>
             <option value="expensive">9</option>
           </select>
+          </section>
+        </div>
+          
 
           <section class="mailing-list">
             <div class="mailing-list-wrapper">
