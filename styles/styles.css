@@ -911,18 +911,20 @@ margin: 8px;
 .button-card-button-infavorites:hover {
   background-color:#6C9E42;
 }
-
+ƒ
 
 .hotel-rating {
   display: flex;
-  margin: 0 auto;
-  padding-top: 16px;
-  padding-bottom: 20px;
+  margin: 0;
+
 }
 
 .rating-title {
   display: flex;
   margin: 0;
+  margin-left: auto;
+  margin-top: 16px;
+  
   padding: 9px 30px 9px 30px;
   background-color:#F2F2F2;
   border-radius: 4px;
@@ -934,9 +936,10 @@ margin: 8px;
 }
 
 .rating-image {
+  margin: 0;
   display: flex;
-  margin:  auto;
-  align-items: center;
+  justify-content: start;
+  align-items: center
 }
 
 .select-item {
