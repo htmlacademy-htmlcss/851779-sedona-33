@@ -124,7 +124,7 @@
   .navigation-link {
     position: relative;
     display: block;
-    padding: 20px 13px;
+    padding: 23px 31px 18px 18px;
     font-family: "PT Sans", sans-serif; 
     font-size: 20px;
     line-height: 24px;
@@ -137,17 +137,13 @@
 
   .navigation-icon {
     position: absolute;
+  
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    fill: #000000;
   }
-
-  .navigation-link {
-   margin: 10px;
-}
 
 .navigation-link:hover .navigation-icon {
   fill: #756257;
@@ -180,8 +176,6 @@
   .navigation-link:hover {
     color: #756257;
   }
-
-
 
   .page-container {
     width: 1200px; 
@@ -416,7 +410,7 @@
   .mailing-list-form {
     display: flex;
     margin: auto;
-    width: 600px;
+    width: 800px;
     padding-top: 47px;
   }
 
@@ -429,9 +423,22 @@
     border: none;
     border-radius: 10px 0px 0px 10px;
   }
+
+  .field:hover {
+    background-color: #E6E6E6;
+  }
   
+  .field:focus {
+    background-color: #E6E6E6;
+     outline: 3px solid #83B3D3;
+  }
 
+  .field:valid {
+    background-color: #E6E6E6;
+    outline: 2px solid #FF5757;
+  }
 
+  
   .button-mailing-list-button {
     display: inline-block;
     box-sizing: border-box;
@@ -452,17 +459,32 @@
     cursor: pointer;
   }
 
+  .button-mailing-list-button:hover {
+    background-color:#68A2CA;
+  }
+
+  .button-mailing-list-button:focus {
+    outline: 3px solid #756257;
+    background-color:#68A2CA;
+  }
+
+  .button-mailing-list-button:active {
+    background-color:#68A2CA;
+    color: transparent;
+    transition: 0.5s all;
+  }
+
 
  /* Footer */
 
  .page-footer {
-    color: #000000;
+    color: #635858;
   }
 
   .page-footer-container {
     display: flex;
     width: 1200px;
-    min-height: 120px;
+    min-height: 100px;
     margin: 0 auto;
   }
 
@@ -475,7 +497,13 @@
   margin: 0;
   }
 
-.footer-social-link {
+ .footer-social-link {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 34px;
+  height: 34px;
   fill: #83B3D3;
 }
 
@@ -484,8 +512,17 @@
 }
 
 .footer-social-link:focus  {
+  border-radius: 10px;
+
   outline: 3px solid #83B3D3;
-  fill: #68A2CA;
+  width: 34px;
+  height: 34px;
+}
+
+.footer-social-link:active {
+  outline: none;
+  fill: #83B3D3;
+  opacity: 30%;
 }
 
   .footer-social-list {
@@ -503,22 +540,66 @@
 
 
   .phone-number {
-    margin-right: 240px;
-    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: -72px;
     max-width: 720px;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
     text-transform: uppercase;
-    align: center;
-    color:#000000;
+    width: 370px;
+    height:70px;
   }
 
-.footer-logo-wrapper {
-  margin-right: 72px;
+  .phone-number-link:hover {
+    color: #756257;
+  }
+
+  .phone-number-link:focus {
+  border-radius: 10px;
+  padding: 15px;
+   outline: 3px solid #83B3D3;
+  }
+
+  .phone-number-link:active {
+    outline: none;
+    color: #756257;
+    opacity: 30%;
+    }
+
+
+  .footer-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-right: 60px;
   padding-top: 40px;
-}
+  padding-bottom: 44px;
+  fill: #000000;
+  } 
+
+  .footer-contacts-logo:hover {
+    fill: #756257;
+  }
+
+  .footer-contacts-logo:focus {
+    border-radius: 10px;
+    outline: 3px solid #83B3D3;
+    width: 160px;
+    height: 53px;
+  }
+
+  .footer-contacts-logo:active  {
+    outline: none;
+    color: #756257;
+    opacity: 30%;
+  }
+
 
   /* Страница каталога */
 
@@ -693,7 +774,6 @@ margin: 8px;
 
 
 .hotel-card {
-  width: 1fr;
   min-height: 438px;
   background-color: #ffffff;
 
@@ -713,14 +793,12 @@ margin: 8px;
 }
 
 .hotel-card-title {
-  margin: 0;
-  padding: 0;
+  margin: auto;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 8px;
 
   text-decoration: none;
 }
@@ -739,7 +817,8 @@ margin: 8px;
 
 .product-card-price-number {
   display: flex;
-  padding-left: 80px;
+  margin: auto;
+  padding-left: 89px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -747,13 +826,20 @@ margin: 8px;
 }
 
 .button-card-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   
 }
 
 .product-card-button-more {
-  margin: 0px;
-  display: inline-block;
+  display: flex;
+  margin: 0;
+ 
+  align-items: center;
+  justify-content: center;
   min-width: 133px;
+  max-height: 37px;
   box-sizing: border-box;
   padding: 9px 8px;
   font-family: inherit;
@@ -771,9 +857,10 @@ margin: 8px;
 }
 
 .button-card-button-favorites {
-  margin: 10px;
-  display: inline-block;
-  
+  margin: 0;
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
   min-width: 133px;
   box-sizing: border-box;
   padding: 9px 8px;
@@ -800,9 +887,10 @@ margin: 8px;
 }
 
 .button-card-button-infavorites {
-  margin: 10px;
-  display: inline-block;
-  
+  margin: 0;
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
   min-width: 133px;
   box-sizing: border-box;
   padding: 9px 8px;
@@ -825,21 +913,21 @@ margin: 8px;
 }
 
 
-
 .hotel-rating {
-  margin: 0px;
-  display: inline-block;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 20px;
 }
 
 .rating-title {
-  display: inline-block;
-  margin-left: 140px;
-
+  display: flex;
+  margin: 0;
   padding: 9px 30px 9px 30px;
   background-color:#F2F2F2;
   border-radius: 4px;
   max-width: 160px;
-  min-height: 37px;
+  max-height: 37px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -847,7 +935,8 @@ margin: 8px;
 
 .rating-image {
   display: flex;
-  align-items: flex-start;
+  margin:  auto;
+  align-items: center;
 }
 
 .select-item {
