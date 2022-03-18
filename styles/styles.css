@@ -650,11 +650,6 @@
   cursor: pointer;
 }
 
-.filter-hotel {
- display: flex;
-}
-
-
 .button-opacity-discard {
   display: inline-block;
   box-sizing: border-box;
@@ -671,29 +666,41 @@
   cursor: pointer;
 }
 
+.filter-hotel {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  padding-left: 72px;
+  padding-top: 32px;
+ }
+ 
 .title-filter {
+  display: flex;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .select-item-filter {
+  display: flex; 
+  
   padding-left: 124px;
   padding-right: 80px;
 }
 
 
 .select-control-sort {
-display: block; 
+display: flex; 
+margin: 24px;
+padding: 12px 127px 12px 20px;
+justify-content: center;
 font-size: 18px; 
 font-family: "PT Sans", sans-serif;; 
 font-weight: 400; 
 color: #333333; 
 line-height: 16px; 
-padding: 12px 94px 12px 19px; 
-max-width: 100%; 
+
 box-sizing: border-box; 
-margin: 0; 
 border: 2px solid #E6E6E6;
 border-radius: 4px;
  -moz-appearance: none;
@@ -706,8 +713,9 @@ border-radius: 4px;
 }
 
 .filter-hotel-icon {
-  display: block; 
- padding-right: 72px;
+ display: flex; 
+ padding-right: 80px;
+ margin-right: auto;
 }
 
 .button-filter-hotel-icon-first {
@@ -749,12 +757,7 @@ margin: 8px;
     color: #FFFFFF;
   }
  
-  .filter-hotel  {
-    display: flex;
-    padding-top: 72px;
-    padding-left: 72px;
-}
- 
+
 /* Список карточек */
 
 .demo-wrapper {
