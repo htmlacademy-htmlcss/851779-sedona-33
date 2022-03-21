@@ -118,47 +118,78 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="Swimming-pool" checked>
-                Бассейн
+                <input class="visually-hidden control-input" type="checkbox" name="Swimming-pool"checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Бассейн</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="parking" checked>
-                Парковка
+                <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Парковка</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="Wi-Fi">
-                Wi-Fi
+                <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                <span class="control-mark"></span>
+                <span class="control-label"> Wi-Fi</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Тип жилья:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
           <label class="control">
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="Housing type" value="Hotel" checked>
-                  Гостиница
+                  <input class="visually-hidden control-input" type="radio" name="Housing type" value="Hotel" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Гостиница</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="Housing type" value="Motel">
-                  Мотель
+                  <input class="visually-hidden control-input" type="radio" name="Housing type" value="Motel">
+                  <span class="control-mark"></span>
+                <span class="control-label"> Мотель</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="Housing type" value="Apartments">
-                  Апартаменты
+                  <input class="visually-hidden control-input" type="radio" name="Housing type" value="Apartments">
+                  <span class="control-mark"></span>
+                <span class="control-label">Апартаменты</span>
                 </label>
               </li>
             </ul>
+
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="width: 227px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    от <input class="range-input" type="number" value="0" name="min-price">
+                  </label>
+                  <label class="catalog-filter-label">
+                    до <input class="range-input" type="number" value="9000" name="max-price" style="width: 144px">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
             <div class="button-item-form">
               <button class="button-blue-submit" type="submit">Применить</button>
               <button class="button-opacity-discard" type="reset">Сбросить</button>
@@ -365,7 +396,6 @@
               <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
-
           <div class="sort-pagination">
             <p class="sort-title">Гостиниц на странице:</p>
             <select class="select-control-sort-number" aria-label="Сортировка">
@@ -375,7 +405,8 @@
             </select>
           </div>
         </section>
-      </div>
+        </div>
+  
 
       <!-- Рассылка -->
 
