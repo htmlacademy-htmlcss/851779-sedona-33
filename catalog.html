@@ -164,30 +164,33 @@
                 </label>
               </li>
             </ul>
+          </fieldset>
 
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <div class="range">
-                <div class="range-scale">
-                  <div class="range-bar" style="width: 227px">
-                    <button class="range-toggle toggle-min">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
-                    <button class="range-toggle toggle-max">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
-                  </div>
-                </div>
-
+          <fieldset class="catalog-filter-group-toggle">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label">
-                    от <input class="range-input" type="number" value="0" name="min-price">
-                  </label>
-                  <label class="catalog-filter-label">
-                    до <input class="range-input" type="number" value="9000" name="max-price" style="width: 144px">
+                    <span class="lable-before">от</span>
+                  <input class="range-input" type="number" value="0" name="min-price" style="width: 144px">
                   </label>
                 </div>
+                  <div class="range-wrapper-inputs-left">
+                  <label class="catalog-filter-label">
+                   <span class="lable-before">до</span>
+                   <input class="range-input-right" type="number" value="9000" name="max-price">
+                  </label>
               </div>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="width: 227px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
             </fieldset>
 
             <div class="button-item-form">
@@ -211,7 +214,7 @@
           </select>
         </div>
         <div class="filter-hotel-icon">
-          <a href="#" class="button-filter-hotel-icon-first">
+          <a href="#" class="button-filter-hotel-icon-active">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
               <path d="M4 0H0V6H4V0Z" fill="black" />
               <path d="M16 0H12V6H16V0Z" fill="black" />
@@ -370,10 +373,13 @@
         </ul>
       </div>
 
+      <hr class="solid">
       <div class="big-button-item-download">
         <a class="big-button-item-download-sub" type="submit">Загрузить ещё</button>
       </div>
+    </hr>
 
+    <hr class="solid">
       <div class="pagination-container">
         <section class="pagination-list">
           <ul class="pagination">
@@ -406,6 +412,7 @@
           </div>
         </section>
         </div>
+      </hr>
   
 
       <!-- Рассылка -->

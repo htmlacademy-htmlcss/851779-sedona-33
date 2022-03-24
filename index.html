@@ -302,6 +302,66 @@
     </footer>
   </div>
   </div>
-</body>
+  <div class="modal-container close-modal">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group-check-in">
+            <span class="control-label-modal">Дата заезда:</span>
+            <label class="visually-hidden" for="auth-login">
+            </label>
+            <input class="auth-form-field" type="text" id="auth-login" name="auth-date" placeholder="27 апреля 2020">
+            <div class="error-text">Мы не можем отправить вас в прошлое.</div>
+          </p>
+          <p class="field-group-departure">
+            <span class="control-label-modal">Дата выезда:</span>
+            <label class="visually-hidden" for="auth-password">Дата выезда:</label>
+            <input class="auth-form-field" type="text" id="auth-date" name="auth-date" placeholder="1 сентября 2021">
+            <div class="explaining-text">На эти даты есть свободные номера. Пока есть.</div>
+          </p>
+          <div class="number-people">
+          <p class="field-group">
+            <span class="control-label-modal">Взрослые:</span>
+            <label class="visually-hidden" for="auth-password">Взрослые:</label>
 
+            <input class="auth-form-field-number" type="text" id="auth-number" name="auth-number" placeholder="2">
+          </p>
+          <p class="field-group-kids">
+            <span class="control-label-modal-kids">Дети:</span>
+            <span class="form-label">
+            <label class="visually-hidden" for="auth-password">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                <svg  class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                  <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/>
+                  <g clip-path="url(#clip0_25851_624)">
+                  <path d="M12 17H13V11H12V17Z" fill="white"/>
+                  <path d="M13 8H12V9H13V8Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_25851_624">
+                  <rect width="1" height="9" fill="white" transform="translate(12 8)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</span>
+            </span>
+          </span>
+          </span>
+            <input class="auth-form-field-number" type="text" id="auth-number" name="auth-number" placeholder="1">
+          </p>
+        </div>
+          <div class="big-button-modal-find">
+            <a class="big-button-modal-find-wrapper" type="submit">Найти</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+</body>
 </html>
