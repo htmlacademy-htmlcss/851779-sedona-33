@@ -554,6 +554,7 @@
     height:70px;
   }
 
+
   .phone-number-link:hover {
     color: #756257;
   }
@@ -1517,10 +1518,6 @@ hr.solid {
   border-top: 1px solid #E6E6E6;
 }
 
-a {
-    text-decoration: none;
-    color: #000000;
-}
 
 .modal-container {
   position: fixed;
