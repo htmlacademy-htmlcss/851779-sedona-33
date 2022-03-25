@@ -48,6 +48,8 @@
     width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
+    text-decoration: none;
+
   }
 
 
@@ -103,15 +105,13 @@
 
   .navigation-logo {
    position: absolute;
-   
   }
 
   .navigation-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 169px;
+    margin: 0 0 0 169px;
     width: 460px;
-    margin: 0;
     padding: 0;
     list-style-type: none;
   }
@@ -197,6 +197,24 @@
     min-height: 485px;
   }
 
+  .element-style {
+    letter-spacing: -0.1 em;
+    font-size: 10px;
+    line-height: 13px;
+    position: absolute;
+    top: 2px;
+    right: -10px;
+    color: #ffffff;
+    background-color: #7DB54F;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+  
 
   .logo-big {
     padding-top: 46px;
@@ -564,6 +582,11 @@
     width: 370px;
     height:70px;
   }
+
+  .phone-number-link {
+    color: #000000;
+    text-decoration: none;
+   }
 
 
   .phone-number-link:hover {
@@ -1153,7 +1176,7 @@ border-radius: 4px;
   font-size: 24px;
   line-height: 31px;
   padding-top: 8px;
-
+  color:#000000;
   text-decoration: none;
 }
 
@@ -1323,6 +1346,10 @@ border-radius: 4px;
  justify-content: center;
 }
 
+.pagination-item {
+
+}
+
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -1365,6 +1392,11 @@ border-radius: 4px;
 }
 
 .pagination-disabled {
+  width: 55px;
+  height: 55px;
+  padding: 18px 20px;
+  display: block;
+  text-decoration: none;
   background-color: #F2F2F2;
   color: #000000;
   align-items: center;
@@ -1523,6 +1555,7 @@ border-radius: 4px;
 
 .big-button-item-download-sub {
   color: #ffffff;
+  text-decoration: none;
 }
 
 hr.solid {
